@@ -3,491 +3,819 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Notes on Macbeth by Jared</title>
+    <meta name="description" content="Macbeth Study Guide - Optimized, comprehensive resource with cosmic theme">
+    <title>Macbeth Study Guide | Performance-Optimized Edition</title>
     <style>
-        :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-            --accent: #e74c3c;
-            --success: #27ae60;
-            --danger: #dc3545;
-            --warning: #f39c12;
-            --light: #ecf0f1;
-            --bg-color: #f5f7fa;
-            --text-color: #333;
-            --card-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background: var(--bg-color);
+        /* CSS Reset with Performance Optimizations */
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth;
+            box-sizing: border-box;
         }
+        /* CSS Custom Properties for Cosmic Theme */
+        :root {
+            --cosmic-dark: #0a0e27;
+            --cosmic-deep: #151b3d;
+            --cosmic-mid: #2a3875;
+            --cosmic-light: #4a5f9e;
+            --cosmic-accent: #7b92c7;
+            --cosmic-bright: #a8b9e0;
+            --cosmic-glow: #64ffda;
+            --cosmic-purple: #9d4edd;
+            --cosmic-pink: #ff006e;
+            --text-primary: #e8eaf6;
+            --text-secondary: #b8c3e0;
+            --text-muted: #8892b0;
+            --gradient-cosmic: linear-gradient(135deg, var(--cosmic-dark) 0%, var(--cosmic-deep) 25%, var(--cosmic-mid) 50%, var(--cosmic-deep) 75%, var(--cosmic-dark) 100%);
+            --gradient-nebula: radial-gradient(circle at 20% 80%, var(--cosmic-purple) 0%, transparent 50%),
+                               radial-gradient(circle at 80% 20%, var(--cosmic-pink) 0%, transparent 50%),
+                               radial-gradient(circle at 40% 40%, var(--cosmic-glow) 0%, transparent 50%);
+            --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            --font-mono: 'Courier New', monospace;
+            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-cosmic: 0 4px 20px rgba(100, 255, 218, 0.15);
+        }
+        /* Optimized Base Styles */
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--cosmic-dark);
+            position: relative;
+            overflow-x: hidden;
+            min-height: 100vh;
+            contain: layout style;
+        }
+        /* Cosmic Background - Optimized with CSS-only */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-cosmic);
+            z-index: -2;
+            will-change: transform;
+        }
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-nebula);
+            opacity: 0.3;
+            z-index: -1;
+            animation: nebula-float 30s ease-in-out infinite;
+            will-change: transform;
+            pointer-events: none;
+        }
+        @keyframes nebula-float {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.1) rotate(180deg); }
+        }
+        /* Container with Performance Containment */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            background: var(--primary);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            border-radius: 10px;
-            margin-bottom: 2rem;
-            box-shadow: var(--card-shadow);
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .subtitle {
-            font-style: italic;
-            opacity: 0.9;
-        }
-        nav {
-            background: var(--secondary);
             padding: 1rem;
-            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+            contain: layout;
+        }
+        /* Headers with Cosmic Styling */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            color: var(--cosmic-bright);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+        }
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; margin-top: 2rem; }
+        h3 { font-size: 1.5rem; color: var(--cosmic-accent); }
+        h4 { font-size: 1.2rem; }
+        /* Main Header */
+        .header {
+            background: linear-gradient(135deg, rgba(10, 14, 39, 0.9), rgba(21, 27, 61, 0.9));
+            backdrop-filter: blur(10px);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--cosmic-light);
+            box-shadow: var(--shadow-cosmic);
+            position: relative;
+            overflow: hidden;
+            contain: layout paint;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--cosmic-glow) 0%, transparent 70%);
+            opacity: 0.1;
+            animation: pulse-glow 4s ease-in-out infinite;
+            pointer-events: none;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { transform: scale(1); opacity: 0.1; }
+            50% { transform: scale(1.2); opacity: 0.2; }
+        }
+        .personal-note {
+            background: linear-gradient(135deg, var(--cosmic-purple), var(--cosmic-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+        /* Navigation - Optimized Sticky */
+        nav {
+            background: rgba(21, 27, 61, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            border-radius: 15px;
             margin-bottom: 2rem;
             position: sticky;
-            top: 10px;
-            z-index: 1000;
+            top: 1rem;
+            z-index: 100;
+            border: 1px solid var(--cosmic-light);
+            contain: layout;
         }
         nav ul {
-            display: flex;
             list-style: none;
-            padding: 0;
-            margin: 0;
+            display: flex;
             flex-wrap: wrap;
+            gap: 0.5rem;
             justify-content: center;
-            gap: 1rem;
         }
-        nav li a {
-            color: white;
+        nav a {
+            color: var(--cosmic-bright);
             text-decoration: none;
             padding: 0.5rem 1rem;
-            border-radius: 5px;
-            transition: background 0.3s;
-            font-size: 0.9rem;
+            border-radius: 10px;
+            background: rgba(42, 56, 117, 0.3);
+            transition: all 0.2s var(--transition-smooth);
+            display: inline-block;
+            border: 1px solid transparent;
         }
-        nav li a:hover {
-            background: var(--accent);
+        nav a:hover {
+            background: rgba(100, 255, 218, 0.1);
+            border-color: var(--cosmic-glow);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(100, 255, 218, 0.2);
         }
+        /* Sections with Lazy Loading Support */
         section {
-            background: white;
+            background: rgba(21, 27, 61, 0.6);
+            backdrop-filter: blur(10px);
             padding: 2rem;
             margin-bottom: 2rem;
-            border-radius: 10px;
-            box-shadow: var(--card-shadow);
+            border-radius: 20px;
+            border: 1px solid var(--cosmic-light);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s var(--transition-smooth);
+            contain: layout paint;
         }
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 0.5rem;
-            margin-top: 0;
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
-        h3 {
-            color: var(--secondary);
-            margin-top: 1.5rem;
-        }
+        /* Tables - Optimized */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 1.5rem 0;
-            overflow-x: auto;
-            display: block;
+            margin: 1rem 0;
+            background: rgba(10, 14, 39, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
         }
         th, td {
-            padding: 12px;
+            padding: 1rem;
             text-align: left;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid var(--cosmic-light);
         }
         th {
-            background-color: var(--primary);
-            color: white;
+            background: var(--cosmic-deep);
+            color: var(--cosmic-glow);
+            font-weight: 600;
         }
-        .highlight-green {
-            background-color: #d4edda;
-            position: relative;
-            cursor: help;
+        tr:hover {
+            background: rgba(100, 255, 218, 0.05);
         }
-        .highlight-red {
-            background-color: #f8d7da;
-            position: relative;
-            cursor: help;
+        /* Forms - Optimized */
+        textarea, input, button {
+            font-family: inherit;
+            font-size: 1rem;
+            padding: 0.75rem;
+            border-radius: 10px;
+            border: 1px solid var(--cosmic-light);
+            background: rgba(10, 14, 39, 0.7);
+            color: var(--text-primary);
+            transition: all 0.2s var(--transition-smooth);
         }
-        .tooltip {
-            visibility: hidden;
-            width: 250px;
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 10px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -125px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            font-size: 0.9rem;
+        textarea:focus, input:focus {
+            outline: none;
+            border-color: var(--cosmic-glow);
+            box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.1);
         }
-        .tooltip::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: #555 transparent transparent transparent;
-        }
-        .highlight-green:hover .tooltip,
-        .highlight-red:hover .tooltip {
-            visibility: visible;
-            opacity: 1;
-        }
-        .tab-container {
-            margin: 2rem 0;
-        }
-        .tab-buttons {
-            display: flex;
-            gap: 1px;
-            margin-bottom: 0;
-        }
-        .tab-btn {
-            padding: 12px 24px;
-            background: var(--light);
-            border: 1px solid #ddd;
-            border-bottom: none;
+        button {
+            background: linear-gradient(135deg, var(--cosmic-mid), var(--cosmic-light));
+            color: var(--text-primary);
             cursor: pointer;
             font-weight: 600;
-            transition: all 0.3s;
-            flex: 1;
-            text-align: center;
-            border-radius: 5px 5px 0 0;
-        }
-        .tab-btn.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-        .tab-content {
-            display: none;
-            padding: 2rem;
-            background: white;
-            border: 1px solid #ddd;
-            border-top: none;
-            border-radius: 0 0 10px 10px;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .self-analysis {
-            background: #e3f2fd;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-            border-left: 4px solid #2196f3;
-        }
-        .tip-box {
-            background: #fff3cd;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            border-left: 4px solid #ffc107;
-        }
-        .print-btn, .theme-toggle {
-            background: var(--success);
-            color: white;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+        }
+        button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3);
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        /* Loading State */
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--cosmic-light);
+            border-top-color: var(--cosmic-glow);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 2rem auto;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        /* Optimized Utilities */
+        .hidden { display: none !important; }
+        .visible { display: block !important; }
+        .fade-in {
+            animation: fadeIn 0.5s var(--transition-smooth);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Quiz Styles */
+        .quiz-option {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            background: rgba(42, 56, 117, 0.3);
+            border: 2px solid var(--cosmic-light);
+            border-radius: 10px;
             cursor: pointer;
-            margin: 10px 5px;
-            font-weight: bold;
+            transition: all 0.2s var(--transition-smooth);
         }
-        .print-btn:hover {
-            background: #218838;
+        .quiz-option:hover:not(:disabled) {
+            background: rgba(100, 255, 218, 0.1);
+            border-color: var(--cosmic-glow);
         }
-        .dark-mode {
-            --bg-color: #1a1a1a;
-            --text-color: #e0e0e0;
-            --light: #2c2c2c;
+        .quiz-option.correct {
+            background: rgba(64, 255, 182, 0.2);
+            border-color: #40ffb6;
         }
-        .dark-mode body, .dark-mode section {
-            background: var(--bg-color);
-            color: var(--text-color);
+        .quiz-option.incorrect {
+            background: rgba(255, 0, 110, 0.2);
+            border-color: var(--cosmic-pink);
         }
-        .dark-mode section, .dark-mode .tab-content {
-            background: var(--light);
+        /* Progress Bar */
+        .progress-bar {
+            height: 8px;
+            background: var(--cosmic-deep);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 1rem 0;
         }
-        .dark-mode th { background-color: #4a637e; }
-        .dark-mode td { border-bottom-color: #444; }
-        .interactive-quiz { background: var(--light); padding: 20px; border-radius: 10px; margin: 20px 0; }
-        .quiz-question { margin: 20px 0; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .dark-mode .quiz-question { background: #3c4c5a; }
-        .quiz-options { margin: 15px 0; }
-        .quiz-option { display: block; padding: 10px; margin: 10px 0; background: #f0f0f0; border: 2px solid transparent; border-radius: 5px; cursor: pointer; transition: all 0.3s ease; color: #333; }
-        .dark-mode .quiz-option { background: #4a637e; color: #e0e0e0; }
-        .quiz-option.correct { background: rgba(39, 174, 96, 0.2); border-color: var(--success); }
-        .quiz-option.incorrect { background: rgba(231, 76, 60, 0.2); border-color: var(--danger); }
-        .progress-tracker { background: var(--primary); padding: 20px; border-radius: 10px; margin: 20px 0; color: white; }
-        .progress-bar { background: rgba(255,255,255,0.3); height: 30px; border-radius: 15px; overflow: hidden; margin: 10px 0; }
-        .progress-fill { background: var(--success); height: 100%; width: 0%; transition: width 1s ease; display: flex; align-items: center; justify-content: center; font-weight: bold; }
-        .essayBox, #previewArea { min-height: 200px; border-radius: 10px; padding: 12px; background: var(--light); border: 1px solid rgba(0,0,0,0.1); font-size: 1rem; }
-        textarea#essayInput { width: 100%; height: 200px; resize: vertical; padding: 12px; border-radius: 8px; border: 1px solid #ccc; background: white; color: var(--text-color); font-size: 1rem; }
-        .dark-mode textarea#essayInput { background: #4a637e; color: #e0e0e0; border-color: #555; }
-        .toolbar { display: flex; gap: 8px; margin-top: 10px; }
-        .toolbar button { background: var(--secondary); color: white; border: none; padding: 8px 12px; border-radius: 10px; cursor: pointer; }
-        .toolbar button.primary { background: var(--success); }
-        .sentence { padding: 2px 4px; border-radius: 6px; margin: 2px 0; display: inline; }
-        .good { background: rgba(39,174,96,0.18); } .bad { background: rgba(239,68,68,0.15); } .meh { background: rgba(250,204,21,0.12); }
-        mark.weak { background: rgba(239,68,68,0.25); padding: 2px 4px; border-radius: 4px; }
-        mark.quote { background: rgba(16,185,129,0.25); padding: 2px 4px; border-radius: 4px; }
-        .sentence.tooltip:hover::after { content: attr(data-tip); position: absolute; left: 0; bottom: calc(100% + 5px); white-space: pre-wrap; background: #333; color: white; padding: 8px; border-radius: 8px; width: 280px; z-index: 100; font-family: Arial, sans-serif; font-size: 0.9em; }
-        mark.weak.tooltip:hover::after, mark.quote.tooltip:hover::after { content: attr(data-tip); }
-        @media (max-width: 900px) { nav ul { flex-direction: column; align-items: center; } table { font-size: 0.9rem; } }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--cosmic-glow), var(--cosmic-purple));
+            transition: width 0.3s var(--transition-smooth);
+        }
+        /* Score Display */
+        .score-display {
+            background: linear-gradient(135deg, var(--cosmic-purple), var(--cosmic-pink));
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; }
+            nav ul {
+                flex-direction: column;
+            }
+            .container {
+                padding: 0.5rem;
+            }
+        }
+        /* Print Optimization */
+        @media print {
+            body::before, body::after { display: none; }
+            section { opacity: 1 !important; transform: none !important; }
+            nav, button { display: none; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Custom Notes on Macbeth by Jared</h1>
-            <p class="subtitle">Comprehensive Study Guide with Interactive Tools, Essay Analyzer, and Revision Resources</p>
+        <header class="header">
+            <h1>✨ Macbeth Study Guide</h1>
+            <p>A performance-optimized, comprehensive resource for Shakespeare's darkest tragedy</p>
+            <p class="personal-note">From me to you - with cosmic clarity and functional elegance 🌌</p>
         </header>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#plot">Plot</a></li>
-                <li><a href="#characters">Characters</a></li>
-                <li><a href="#themes">Themes</a></li>
-                <li><a href="#motifs">Motifs</a></li>
-                <li><a href="#quotes">Quotes</a></li>
-                <li><a href="#interpretations">Critics</a></li>
-                <li><a href="#essay">Essay Analyzer</a></li>
-                <li><a href="#quiz">Quiz</a></li>
-            </ul>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul id="nav-list"></ul>
         </nav>
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>William Shakespeare's *Macbeth*, composed around 1606 during the Renaissance period (1500-1660), is a tragic drama set in eleventh-century Scotland and briefly England. Often called "The Scottish Play" due to theatrical superstitions, it explores the psychological descent of a noble warrior into tyranny, driven by ambition, supernatural influences, and moral corruption. The play draws from Raphael Holinshed's *Chronicles* (1577) but Shakespeare altered historical details for dramatic effect: portraying Duncan as virtuous (unlike Holinshed's weak ruler), making Banquo noble (to flatter King James I, who claimed descent from him), and emphasizing themes of regicide and witchcraft to align with James's interests in demonology and the divine right of kings.</p>
-            <p>Influenced by the Gunpowder Plot of 1605, the play incorporates equivocation (deceptive language), referencing Jesuit plotters like Henry Garnet. First published in the 1623 First Folio, *Macbeth* is Shakespeare's shortest tragedy, blending history, supernatural horror, and psychological introspection. Its enduring relevance lies in its timeless exploration of power's corrupting influence.</p>
-        </section>
-        <section id="plot">
-            <h2>Detailed Plot Summary</h2>
-            <h3>Act 1 (Exposition and Inciting Incident)</h3><p>Opens with three witches chanting "Fair is foul, and foul is fair," establishing chaos and moral inversion. Macbeth and Banquo heroically defeat Norwegian invaders. The witches prophesy: Macbeth will be Thane of Cawdor and king; Banquo's descendants will rule. King Duncan names Macbeth Thane of Cawdor, fulfilling part of the prophecy. Macbeth informs Lady Macbeth, who vows to "unsex" herself for ruthlessness. Duncan visits their castle. Analysis: Introduces ambition's spark; prophecies tempt free will vs. fate debate.</p>
-            <h3>Act 2 (Rising Action - Regicide)</h3><p>Macbeth hallucinates a dagger ("Is this a dagger which I see before me?"), kills Duncan offstage, and frames the guards. Lady Macbeth plants the daggers. Macduff discovers the body; Duncan's sons, Malcolm and Donalbain, flee, arousing suspicion. Macbeth is crowned. Analysis: Guilt emerges immediately; Macbeth's "sleep no more" soliloquy foreshadows insomnia motif.</p>
-            <h3>Act 3 (Climax - Consolidation of Power)</h3><p>Paranoid about Banquo's lineage, Macbeth hires murderers to kill Banquo and Fleance; Banquo dies, but Fleance escapes. At a banquet, Banquo's ghost appears only to Macbeth, causing a breakdown ("Avaunt! And quit my sight!"). Lady Macbeth covers for him. Analysis: Marks Macbeth's isolation; ghost symbolizes unresolved guilt, shifting from internal conflict to public tyranny.</p>
-            <h3>Act 4 (Falling Action - Prophecies and Atrocities)</h3><p>Macbeth seeks the witches, who conjure apparitions with equivocal prophecies. Macbeth orders Macduff's castle seized; Lady Macduff and her children are slaughtered. In England, Macduff joins Malcolm. Analysis: Equivocal prophecies build false security; massacre highlights descent into barbarism.</p>
-            <h3>Act 5 (Resolution - Downfall)</h3><p>Lady Macbeth sleepwalks, scrubbing imaginary blood ("Out, damned spot!"), and dies (likely suicide). Malcolm's army advances, camouflaged with Birnam branches. Macduff reveals his caesarean birth and beheads Macbeth. Malcolm is crowned, restoring order. Analysis: Culminates in nihilism ("Life's but a walking shadow"); justice prevails, affirming divine order.</p>
-        </section>
-        <section id="characters">
-            <h2>Character Analysis</h2>
-            <table>
-                <thead><tr><th>Character</th><th>Description and In-Depth Analysis</th></tr></thead>
-                <tbody>
-                    <tr><td><strong>Macbeth</strong></td><td>Initially a "brave" warrior ("Bellona's bridegroom"), he devolves into a "tyrant" through ambition's corruption. Psychoanalytic view: Represents id-driven impulses unchecked by superego; hallucinations manifest repressed guilt. His "vaulting ambition" ties to toxic masculinity, pressured by Lady Macbeth's taunts. Soliloquy in 1.7 shows moral hesitation, but post-murder, he becomes desensitized.</td></tr>
-                    <tr><td><strong>Lady Macbeth</strong></td><td>Ambitious manipulator who invokes spirits to "unsex" her, rejecting femininity for power. Feminist interpretation: Victim of patriarchy; her breakdown critiques how women internalize male violence. Sleepwalking reveals subconscious guilt; "damned spot" symbolizes unresolved trauma from childlessness.</td></tr>
-                    <tr><td><strong>Banquo</strong></td><td>Loyal general, suspects Macbeth but remains honorable. His ghost haunts as conscience's embodiment. Historical: Altered from Holinshed's accomplice to noble ancestor of James I. Foil to Macbeth; resists prophecy, highlighting free will.</td></tr>
-                    <tr><td><strong>The Three Witches</strong></td><td>Supernatural agents chanting riddles, embodying fate and temptation. Reflect James I's *Daemonologie* and North Berwick witch trials. Equivocators providing false assurance, leading to hubris.</td></tr>
-                    <tr><td><strong>Macduff</strong></td><td>Thane of Fife, avenges family massacre. Born by caesarean, bypasses prophecy. Represents justice and natural order; grief humanizes him against Macbeth's numbness.</td></tr>
-                    <tr><td><strong>King Duncan</strong></td><td>Benevolent ruler, murdered in hospitality breach. Embodies divine kingship; death disrupts Great Chain of Being, causing unnatural events.</td></tr>
-                    <tr><td><strong>Malcolm</strong></td><td>Duncan's heir, flees then returns as rightful king. Tests Macduff's loyalty, contrasting Macbeth's tyranny with virtuous rule.</td></tr>
-                </tbody>
-            </table>
-        </section>
-        <section id="themes">
-            <h2>Major Themes</h2>
-            <p><strong>Ambition and Its Corruption:</strong> Central theme. Unchecked desire destroys morality. Prophecies ignite Macbeth's "vaulting ambition, which o'erleaps itself."</p>
-            <p><strong>Guilt and Conscience:</strong> Psychological torment post-crime. Manifests in Lady Macbeth's sleepwalking and Macbeth's hallucinations.</p>
-            <p><strong>Fate vs. Free Will:</strong> Do prophecies predetermine events or merely tempt human action? Equivocation suggests human agency is key.</p>
-            <p><strong>Appearance vs. Reality:</strong> Deception abounds ("fair is foul"). Macbeth's honorable facade hides tyranny. "There's daggers in men's smiles."</p>
-            <p><strong>Violence and Masculinity:</strong> Equates manhood with brutality. Lady Macbeth's "unsex me here" rejects traditional femininity for cruelty.</p>
-            <p><strong>Kingship and Tyranny:</strong> Contrasts legitimate, divine rule (Duncan/Malcolm) with usurpation. Tyranny leads to isolation and downfall.</p>
-        </section>
-        <section id="motifs">
-            <h2>Motifs and Symbols</h2>
-            <p><strong>Blood:</strong> Symbolizes guilt. Evolves from an image of valor ("smoked with bloody execution") to a persistent stain of sin ("Will all great Neptune's ocean wash this blood clean from my hand?").</p>
-            <p><strong>Sleep:</strong> Represents innocence and peace of mind. After murdering Duncan, Macbeth "does murder sleep," leading to his and Lady Macbeth's torment and insomnia.</p>
-            <p><strong>Darkness & Night:</strong> Conceals evil deeds. Murders and plotting occur at night, reflecting the moral darkness of the characters.</p>
-            <p><strong>Unnatural Events:</strong> Storms, earthquakes, and animal behavior (a falcon killed by an owl) reflect the disruption of the natural and divine order caused by regicide.</p>
-        </section>
-        <section id="quotes">
-            <h2>Key Quotes Analyzed</h2>
-            <table>
-                <thead><tr><th>Quote</th><th>Act/Scene</th><th>Analysis & Theme</th></tr></thead>
-                <tbody>
-                    <tr><td>"Fair is foul, and foul is fair."</td><td>1.1</td><td>Witches' paradox; inverts morality and foreshadows deception. (Appearance vs. Reality)</td></tr>
-                    <tr><td>"Stars, hide your fires; / Let not light see my black and deep desires."</td><td>1.4</td><td>Macbeth hides his ambition; light/dark motif. (Ambition, Guilt)</td></tr>
-                    <tr><td>"Come, you spirits... unsex me here, / And fill me from the crown to the toe top-full / Of direst cruelty."</td><td>1.5</td><td>Lady Macbeth rejects femininity for the ruthlessness she believes is necessary. (Masculinity, Ambition)</td></tr>
-                    <tr><td>"Look like th' innocent flower, / But be the serpent under't."</td><td>1.5</td><td>Advice on deception; biblical allusion to the serpent in Eden. (Appearance vs. Reality)</td></tr>
-                    <tr><td>"Is this a dagger which I see before me, / The handle toward my hand?"</td><td>2.1</td><td>A hallucination representing Macbeth's tormented psyche and bloody ambition. (Guilt)</td></tr>
-                    <tr><td>"Will all great Neptune's ocean wash this blood / Clean from my hand?"</td><td>2.2</td><td>Hyperbole showing the immense, indelible nature of his guilt. (Guilt)</td></tr>
-                    <tr><td>"There's daggers in men's smiles."</td><td>2.3</td><td>Donalbain's recognition of the pervasive betrayal at court. (Appearance vs. Reality)</td></tr>
-                    <tr><td>"Upon my head they placed a fruitless crown / And put a barren sceptre in my gripe."</td><td>3.1</td><td>Macbeth's anxiety over his lack of heirs and Banquo's prophecy. (Legacy, Ambition)</td></tr>
-                    <tr><td>"I am in blood / Stepped in so far that, should I wade no more, / Returning were as tedious as go o'er."</td><td>3.4</td><td>Point of no return; he is committed to his violent path. (Violence, Guilt)</td></tr>
-                    <tr><td>"Out, damned spot! Out, I say!"</td><td>5.1</td><td>Lady Macbeth's sleepwalking confession; the psychological stain of blood cannot be washed away. (Guilt)</td></tr>
-                    <tr><td>"Tomorrow, and tomorrow, and tomorrow..."</td><td>5.5</td><td>Macbeth's nihilistic soliloquy on the futility of life after his ambition has cost him everything. (Ambition's End)</td></tr>
-                </tbody>
-            </table>
-        </section>
-        <section id="interpretations">
-            <h2>Critical Interpretations</h2>
-            <p><strong>Psychoanalytic (Freud):</strong> Reads the play through the lens of repressed desires and guilt. Macbeth's hallucinations (dagger, ghost) are seen as projections of his guilty superego. Lady Macbeth's sleepwalking is the return of the repressed.</p>
-            <p><strong>Feminist (Janet Adelman):</strong> Argues that the play is driven by male anxiety about female power. Lady Macbeth subverts traditional gender roles but is ultimately punished with madness and death, reinforcing patriarchal norms.</p>
-            <p><strong>New Historicist (Stephen Greenblatt):</strong> Connects the play to its specific historical context—Jacobean England's fear of regicide after the Gunpowder Plot, King James I's interest in witchcraft, and the politics of equivocation.</p>
-            <p><strong>A.C. Bradley (Tragic Hero):</strong> Views Macbeth as a classic tragic hero whose noble qualities are destroyed by a single fatal flaw ("vaulting ambition"), leading to his inevitable downfall.</p>
-        </section>
-        <section id="essay">
-            <h2>My Essay & Interactive Analyzer</h2>
-            <div class="tab-container">
-                <div class="tab-buttons">
-                    <button class="tab-btn active" onclick="openTab(event, 'original')">Original</button>
-                    <button class="tab-btn" onclick="openTab(event, 'marked')">Marked</button>
-                    <button class="tab-btn" onclick="openTab(event, 'improved')">Improved</button>
-                </div>
-                <div id="original" class="tab-content active">
-                    <h3>Original Essay</h3>
-                    <p>In Shakespeare's Macbeth, ambition is very bad and leads to the downfall of the protagonists. Macbeth starts as a hero but becomes a bad guy because of what he wants. The witches' prophecies spark his ambition, like when he says, "Two truths are told / As happy prologues to the swelling act / Of the imperial theme." This shows his ambition grows and overwhelms him. Lady Macbeth is also ambitious. She calls on spirits to "unsex me here". In the end, their ambition leads to guilt and madness, and Macbeth says life is meaningless. So, Shakespeare shows ambition is bad.</p>
-                </div>
-                <div id="marked" class="tab-content">
-                    <h3>Marked Version</h3>
-                    <p>In Shakespeare's Macbeth, ambition is <span class="highlight-red">very bad<span class="tooltip">Weak vocabulary. Use stronger words like 'a destructive force' or 'a corrupting influence'.</span></span> and leads to the downfall of the protagonists. Macbeth starts as a hero but becomes a <span class="highlight-red">bad guy<span class="tooltip">Informal. 'Tyrant' or 'murderer' is more precise.</span></span> because of what he wants. The witches' prophecies spark his ambition, <span class="highlight-green">like when he says, "Two truths are told / As happy prologues to the swelling act / Of the imperial theme."<span class="tooltip">Good use of an embedded quote.</span></span> <span class="highlight-green">This shows his ambition grows and overwhelms him.<span class="tooltip">Okay analysis, but could explore the 'swelling act' metaphor more deeply.</span></span> Lady Macbeth is also ambitious. <span class="highlight-green">She calls on spirits to "unsex me here".<span class="tooltip">Good quote, but explain its significance regarding gender and cruelty.</span></span> In the end, their ambition leads to guilt and madness, and Macbeth says life is meaningless. <span class="highlight-red">So, Shakespeare shows ambition is bad.<span class="tooltip">Simplistic conclusion. Synthesize the argument about unchecked ambition.</span></span></p>
-                </div>
-                <div id="improved" class="tab-content">
-                    <h3>Improved Version</h3>
-                    <p>In *Macbeth*, Shakespeare dramatizes ambition as a corrupting force that erodes moral identity, transforming a valiant warrior into a nihilistic tyrant. Initially, Macbeth’s "vaulting ambition" is not an inherent evil but a latent potential, ignited by the witches’ equivocal prophecies. His aside, "Two truths are told / As happy prologues to the swelling act," employs a theatrical metaphor, revealing his view of destiny as a script he can now enact. This desire is weaponized by Lady Macbeth, who rejects her femininity to embrace "direst cruelty," equating power with a violent masculinity. However, the play argues that ambition divorced from morality is self-destructive. The psychological torment of both characters—manifested in hallucinations and somnambulism—culminates in Macbeth's "Tomorrow, and tomorrow" soliloquy, where his once-great aspirations collapse into the revelation that life is a "tale told by an idiot, signifying nothing." Ultimately, Shakespeare presents a cautionary tale for his Jacobean audience, asserting that ambition without a moral compass leads not to glory, but to spiritual and literal annihilation.</p>
-                </div>
-            </div>
-            <h3>Interactive Essay Analyzer</h3>
-            <div class="essayBox"><textarea id="essayInput" placeholder="Paste your own essay here to analyze..."></textarea></div>
-            <div class="toolbar">
-                <button class="primary" onclick="analyzeEssay()">Analyze Essay</button>
-                <button onclick="useSampleEssay()">Use Sample</button>
-            </div>
-            <div id="previewArea">Analysis will appear here. The tool highlights weak words, identifies quotes, and scores each sentence based on analytical quality.</div>
-        </section>
-        <section id="quiz">
-            <h2>Interactive Quiz</h2>
-            <div class="progress-tracker">
-                <h3>Quiz Progress</h3>
-                <div class="progress-bar"><div class="progress-fill" id="progressFill">0%</div></div>
-                <p>Score: <span id="quizScore">0</span> / 4</p>
-            </div>
-            <div id="quiz-container" class="interactive-quiz">
-                <!-- Questions will be injected by JavaScript -->
-            </div>
-        </section>
-        <button class="print-btn" onclick="window.print()">Print Guide</button>
-        <button class="theme-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <main id="main-content">
+            <!-- Content will be dynamically loaded -->
+        </main>
     </div>
     <script>
-        function openTab(evt, tabName) {
-            document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(tb => tb.classList.remove('active'));
-            document.getElementById(tabName).classList.add('active');
-            evt.currentTarget.classList.add('active');
-        }
-        function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }
-
-        // Quiz Logic
-        const quizData = [
-            { q: "What is Macbeth's fatal flaw?", o: ["Jealousy", "Vaulting ambition", "Greed", "Cowardice"], a: "Vaulting ambition" },
-            { q: "Who discovers King Duncan's body?", o: ["Lennox", "Banquo", "Macduff", "Malcolm"], a: "Macduff" },
-            { q: "What does Lady Macbeth's sleepwalking reveal?", o: ["Her ambition", "Her love for Macbeth", "Her repressed guilt", "Her plan to flee"], a: "Her repressed guilt" },
-            { q: "How does Birnam Wood 'come to Dunsinane'?", o: ["A forest fire", "An earthquake", "The soldiers use branches as camouflage", "It is a metaphor"], a: "The soldiers use branches as camouflage" }
-        ];
-        let currentQuestion = 0; let score = 0;
-        const quizContainer = document.getElementById('quiz-container');
-        const scoreEl = document.getElementById('quizScore');
-        const progressFill = document.getElementById('progressFill');
-
-        function loadQuiz() {
-            quizContainer.innerHTML = '';
-            const qData = quizData[currentQuestion];
-            const questionEl = document.createElement('div');
-            questionEl.className = 'quiz-question';
-            questionEl.innerHTML = `<h4>Question ${currentQuestion + 1}: ${qData.q}</h4><div class="quiz-options"></div>`;
-            const optionsEl = questionEl.querySelector('.quiz-options');
-            qData.o.forEach(optionText => {
-                const label = document.createElement('label');
-                label.className = 'quiz-option';
-                label.textContent = optionText;
-                label.onclick = () => selectAnswer(label, optionText, qData.a);
-                optionsEl.appendChild(label);
-            });
-            quizContainer.appendChild(questionEl);
-        }
-        function selectAnswer(labelEl, selected, correct) {
-            document.querySelectorAll('.quiz-option').forEach(opt => opt.onclick = null); // Disable options
-            if (selected === correct) {
-                labelEl.classList.add('correct');
-                score++;
-            } else {
-                labelEl.classList.add('incorrect');
-                document.querySelectorAll('.quiz-option').forEach(opt => { if (opt.textContent === correct) opt.classList.add('correct'); });
-            }
-            currentQuestion++;
-            scoreEl.textContent = score;
-            progressFill.style.width = `${(currentQuestion / quizData.length) * 100}%`;
-            setTimeout(() => {
-                if (currentQuestion < quizData.length) loadQuiz();
-                else quizContainer.innerHTML = `<h4>Quiz Complete! Your final score is ${score}/${quizData.length}.</h4>`;
-            }, 1500);
-        }
-        document.addEventListener('DOMContentLoaded', loadQuiz);
-
-        // Essay Analyzer Logic
-        const weakWords = ['very','really','thing','things','a lot','good','bad','stuff','nice','okay','ok','literally','maybe','so','just','actually'];
-        const analyticVerbs = ['shows','demonstrates','suggests','reveals','indicates','illustrates','underscores','highlights','exposes','symbolizes','represents','implies','conveys'];
-        const themeWords = ['ambition','guilt','fate','prophecy','supernatural','sleep','blood','tyranny','power','kingship','masculinity','gender'];
-        
-        function splitSentences(text) { return text.replace(/([.?!])\s*(?=[A-Z])/g, "$1|").split("|").map(s => s.trim()).filter(Boolean); }
-
-        function scoreSentence(s) {
-            let score = 0; const tips = []; const lower = s.toLowerCase();
-            if (/["'“”‘’]/.test(s)) { score += 2; tips.push('✓ Contains a quote.'); }
-            if (analyticVerbs.some(v => lower.includes(' ' + v))) { score += 1; tips.push('✓ Uses analytical language.'); }
-            if (themeWords.some(w => lower.includes(w))) { score += 1; tips.push('✓ Links to a key theme.'); }
-            const foundWeak = weakWords.filter(w => lower.match(new RegExp('\\b' + w + '\\b')));
-            if (foundWeak.length) { score -= 2; tips.push('✗ Contains weak word(s): ' + [...new Set(foundWeak)].join(', ')); }
-            if (s.split(/\s+/).length < 6) { score -= 1; tips.push('✗ Very short sentence.'); }
-            return {score, tips, foundWeak};
-        }
-
-        function analyzeEssay() {
-            const raw = document.getElementById('essayInput').value.trim();
-            if (!raw) { document.getElementById('previewArea').textContent = 'Please enter an essay to analyze.'; return; }
-            const sents = splitSentences(raw);
-            const preview = document.getElementById('previewArea');
-            preview.innerHTML = '';
-            sents.forEach(s => {
-                const res = scoreSentence(s);
-                let html = s;
-                if (res.foundWeak.length) {
-                    [...new Set(res.foundWeak)].forEach(w => {
-                        html = html.replace(new RegExp('\\b' + w + '\\b', 'ig'), `<mark class="weak tooltip" data-tip="Weak word. Try being more specific.">${w}</mark>`);
-                    });
+        'use strict';
+        // Performance-Optimized Macbeth Study Guide
+        // Using Maps, Sets, Functional Programming, and modern JS optimization techniques
+        // Immutable State Management (Rust-inspired)
+        const State = (() => {
+            const state = new Map([
+                ['currentSection', 'context'],
+                ['quizScore', 0],
+                ['quizQuestions', new Set()],
+                ['visitedSections', new Set()],
+                ['performanceMetrics', new Map()]
+            ]);
+            const subscribers = new Set();
+            return {
+                get: (key) => state.get(key),
+                set: (key, value) => {
+                    const oldValue = state.get(key);
+                    state.set(key, value);
+                    subscribers.forEach(fn => fn(key, value, oldValue));
+                    return value;
+                },
+                subscribe: (fn) => {
+                    subscribers.add(fn);
+                    return () => subscribers.delete(fn);
+                },
+                getState: () => new Map(state)
+            };
+        })();
+        // Performance monitoring
+        const Performance = {
+            mark: (name) => {
+                if (window.performance && performance.mark) {
+                    performance.mark(name);
                 }
-                html = html.replace(/(["'“”‘’][^"'“”‘’]{10,}?["'“”‘’])/g, '<mark class="quote tooltip" data-tip="Good evidence. Ensure you explain its significance.">$1</mark>');
-                const span = document.createElement('span');
-                let status = res.score >= 2 ? 'good' : res.score <= -1 ? 'bad' : 'meh';
-                span.className = `sentence tooltip ${status}`;
-                span.innerHTML = html + ' ';
-                span.setAttribute('data-tip', `Score: ${res.score}\n${res.tips.join('\n')}`);
-                preview.appendChild(span);
-            });
+            },
+            measure: (name, startMark, endMark) => {
+                if (window.performance && performance.measure) {
+                    try {
+                        performance.measure(name, startMark, endMark);
+                        const measures = performance.getEntriesByName(name);
+                        if (measures.length > 0) {
+                            State.set('performanceMetrics',
+                                State.get('performanceMetrics').set(name, measures[0].duration)
+                            );
+                        }
+                    } catch (e) {
+                        console.warn('Performance measurement failed:', e);
+                    }
+                }
+            }
+        };
+        // Functional utility functions
+        const Utils = {
+            // Debounce for scroll events
+            debounce: (func, wait) => {
+                let timeout;
+                return (...args) => {
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => func.apply(null, args), wait);
+                };
+            },
+            // Throttle for animation frames
+            throttle: (func, limit) => {
+                let inThrottle;
+                return (...args) => {
+                    if (!inThrottle) {
+                        func.apply(null, args);
+                        inThrottle = true;
+                        setTimeout(() => inThrottle = false, limit);
+                    }
+                };
+            },
+            // Memoization for expensive computations
+            memoize: (fn) => {
+                const cache = new Map();
+                return (...args) => {
+                    const key = JSON.stringify(args);
+                    if (cache.has(key)) {
+                        return cache.get(key);
+                    }
+                    const result = fn(...args);
+                    cache.set(key, result);
+                    return result;
+                };
+            },
+            // Pipe for function composition
+            pipe: (...fns) => (x) => fns.reduce((v, f) => f(v), x),
+            // Curry for partial application
+            curry: (fn) => {
+                return function curried(...args) {
+                    if (args.length >= fn.length) {
+                        return fn.apply(null, args);
+                    }
+                    return (...nextArgs) => curried(...args, ...nextArgs);
+                };
+            }
+        };
+        // Content Data using Maps for O(1) lookup
+        const ContentData = new Map([
+            ['context', {
+                title: 'Historical Context',
+                content: `
+                    <h3>The Real Macbeth</h3>
+                    <p>Mac Bethad mac Findláich (died 1057) ruled Scotland from 1040-1057. Unlike Shakespeare's villain, he killed Duncan in battle, not murder, and ruled with relative stability. Historical accounts suggest Macbeth's reign brought prosperity, and he even made a pilgrimage to Rome. Shakespeare transformed this figure into a tyrant to suit dramatic purposes and contemporary politics. This alteration highlights how playwrights adapted history for thematic depth, emphasizing ambition's corrupting influence over factual accuracy.</p>
+                    <h3>Shakespeare's Sources</h3>
+                    <p>Primary source: Holinshed's Chronicles (1577). Shakespeare altered the story to flatter King James I, who claimed descent from Banquo. He amplified the supernatural elements, drawing from James's own book Daemonologie (1597), which discussed witchcraft, to appeal to the king's interests and fears. Analysis: This source adaptation shows Shakespeare's political savvy, using drama to reinforce monarchical legitimacy while exploring human flaws.</p>
+                    <h3>Jacobean Context</h3>
+                    <p>Written in 1606, shortly after the Gunpowder Plot (1605). References to equivocation reflect contemporary anxieties about treason and religious deception. The play explores themes of regicide amid fears of Catholic plots against Protestant King James, who survived multiple assassination attempts. The Porter's speech alludes to the Jesuit Henry Garnet's trial for equivocation. Deeper analysis: Equivocation symbolizes broader societal distrust, mirroring how language can deceive, much like the witches' prophecies.</p>
+                    <h3>Additional Analysis</h3>
+                    <p>The play's emphasis on witchcraft ties into the North Berwick witch trials (1590), which fascinated James. Shakespeare's portrayal serves as both entertainment and political commentary, reinforcing the divine right of kings while warning against ambition that disrupts natural order. In essays, discuss how historical context influences interpretation: e.g., modern views might see Macbeth as a victim of fate, while Jacobean audiences saw divine retribution.</p>
+                `
+            }],
+            ['plot', {
+                title: 'Plot Summary',
+                content: `
+                    <h3>Act 1: Temptation</h3>
+                    <p>Witches prophecy Macbeth will be king. Lady Macbeth plots Duncan's murder. Macbeth, initially hesitant, is persuaded by his wife. Key quote: "Yet do I fear thy nature; It is too full o' the milk of human kindness" (Lady Macbeth, 1.5), highlighting her manipulation of gender roles to spur him on. Analysis: This act establishes internal conflict, showing ambition's seed planted by external forces but nurtured by choice.</p>
+                    <h3>Act 2: The Deed</h3>
+                    <p>Macbeth murders Duncan. Malcolm and Donalbain flee. Macbeth's guilt manifests immediately: "Methought I heard a voice cry 'Sleep no more!'" (2.2). The act disrupts natural order, symbolized by unnatural events like the falcon killed by an owl. Deeper insight: Sleep imagery represents lost innocence; the murder's aftermath foreshadows psychological unraveling.</p>
+                    <h3>Act 3: Paranoia</h3>
+                    <p>Macbeth has Banquo killed but Fleance escapes. Banquo's ghost appears at the banquet, driving Macbeth to madness: "Hence, horrible shadow! Unreal mockery, hence!" (3.4). This scene underscores Macbeth's growing isolation and fear of retribution. Analysis: The ghost symbolizes suppressed guilt, using supernatural to externalize internal turmoil.</p>
+                    <h3>Act 4: Tyranny</h3>
+                    <p>New prophecies from witches give false security. Macduff's family murdered in a brutal display of tyranny. Lady Macduff's lament: "All my pretty ones? Did you say all?" (4.3) emphasizes the human cost of Macbeth's ambition. Insight: This act shifts from personal ambition to societal destruction, showing tyranny's ripple effects.</p>
+                    <h3>Act 5: Justice</h3>
+                    <p>Lady Macbeth sleepwalks and dies, haunted by guilt: "Out, damned spot!" (5.1). Birnam Wood moves as prophesied. Macduff kills Macbeth, revealing he was "from his mother's womb untimely ripped" (5.8), fulfilling the prophecy. Malcolm restores order. Overall analysis: Cathartic resolution restores hierarchy; tragic structure builds sympathy then judgment.</p>
+                    <h3>Overall Structure Analysis</h3>
+                    <p>The plot follows Aristotelian tragedy: rise through ambition, fall through hubris. Dramatic irony abounds, as prophecies seem protective but lead to downfall. The accelerating pace mirrors Macbeth's psychological descent. For essays: Analyze how plot devices like soliloquies reveal character motivation, supporting themes of fate vs. free will.</p>
+                `
+            }],
+            ['characters', {
+                title: 'Character Analysis',
+                content: `
+                    <h3>Macbeth</h3>
+                    <p>Tragic hero whose "vaulting ambition" leads to downfall. Initially noble—"Bellona's bridegroom" (1.2)—becomes tyrant. His soliloquies reveal internal conflict: "If it were done when 'tis done" (1.7) shows moral awareness before descent into nihilism: "Life's but a walking shadow" (5.5). Analysis: Macbeth embodies hamartia; his arc critiques unchecked power, blending sympathy with condemnation.</p>
+                    <h3>Lady Macbeth</h3>
+                    <p>Ambitious manipulator who "unsexes" herself: "Come, you spirits... unsex me here" (1.5). Challenges gender norms to drive plot. Guilt drives her to madness; her sleepwalking scene contrasts early ruthlessness with later vulnerability, showing ambition's toll on psyche. Deeper: Feminist readings see her as victim of patriarchal constraints, her power limited to influence.</p>
+                    <h3>Banquo</h3>
+                    <p>Macbeth's foil. Resists temptation despite similar prophecies: "That, trusted home, Might yet enkindle you unto the crown" (3.1). His murder and ghostly return symbolize inescapable consequences. As James I's ancestor, he's portrayed nobly. Analysis: Highlights moral choice; his suspicion foreshadows rebellion against tyranny.</p>
+                    <h3>The Witches</h3>
+                    <p>Ambiguous supernatural forces. Do they control fate or merely reveal it? Their equivocations—"Double, double toil and trouble" (4.1)—mirror play's theme of deception. Represent chaos disrupting order, or perhaps projections of characters' desires. Insight: In essays, argue their role in fate/free will debate; are they agents or catalysts?</p>
+                    <h3>Macduff</h3>
+                    <p>Avenger of tyranny. His grief—"All my pretty ones?" (4.3)—humanizes resistance. As "not of woman born," he fulfills prophecy, restoring natural order. Contrasts Macbeth's ambition with patriotic duty. Analysis: Embodiment of righteous anger; his desertion of family critiques blind loyalty.</p>
+                    <h3>Duncan</h3>
+                    <p>Ideal king, embodying divine right. His murder disrupts cosmos: "Dark night strangles the travelling lamp" (2.4). Serves as moral benchmark against which Macbeth's tyranny is measured. Deeper: His trusting nature highlights betrayal's tragedy, reinforcing kingship's sanctity.</p>
+                    <h3>Essay Tips for Character Analysis</h3>
+                    <p>Use PEE structure: Point, Evidence (quote), Explanation. Compare characters as foils. Discuss development arcs with specific scenes. Avoid summary; focus on how characters advance themes.</p>
+                `
+            }],
+            ['themes', {
+                title: 'Major Themes',
+                content: `
+                    <h3>Ambition</h3>
+                    <p>Destructive when divorced from morality. "Vaulting ambition which o'erleaps itself" (1.7). Macbeth's rise and fall illustrate how unchecked desire corrupts: from brave warrior to "dead butcher" (5.9). Lady Macbeth's parallel arc shows ambition's gender-transcending destructiveness. Analysis: Ambition as tragic flaw; compare to modern anti-heroes like Walter White.</p>
+                    <h3>Appearance vs Reality</h3>
+                    <p>"Fair is foul, and foul is fair" (1.1). Pervades play: witches' prophecies seem beneficial but doom; Macbeth appears loyal but plots murder. Equivocation in Porter scene (2.3) reflects Jesuit trials, emphasizing deception's role in treason. Deeper: Linguistic ambiguity mirrors moral relativism; in essays, link to postmodern interpretations.</p>
+                    <h3>Gender and Power</h3>
+                    <p>Masculinity equated with violence. Lady Macbeth rejects femininity: "Unsex me here" (1.5), associating power with male traits. Her breakdown restores gender norms? Macbeth taunted as "coward" (1.7), linking ambition to performative masculinity. Analysis: Challenges Elizabethan gender roles; feminist critiques see subversion then reinforcement.</p>
+                    <h3>Natural Order</h3>
+                    <p>Regicide disrupts cosmic order, reflected in unnatural events: "A falcon... was by a mousing owl hawked at and killed" (2.4). Great Chain of Being violated; restoration with Malcolm's ascension. Blood imagery evolves from honor to pollution. Insight: Pathetic fallacy reinforces divine retribution; discuss eco-critical readings.</p>
+                    <h3>Guilt and Conscience</h3>
+                    <p>Psychological toll of crime. Macbeth's hallucinations—"Is this a dagger" (2.1)—and Lady Macbeth's "Out, damned spot" (5.1) show inescapable guilt. Sleep motif: murder "kills" innocent sleep, leading to insomnia and madness. Analysis: Freudian readings see subconscious manifestation; contrasts initial suppression with later eruption.</p>
+                    <h3>Fate vs Free Will</h3>
+                    <p>Witches plant ideas, but characters choose actions. Macbeth: "If chance will have me king, why, chance may crown me" (1.3), but he he acts. Prophecies self-fulfilling? Explores predestination in Calvinist context. Deeper: Philosophical debate; in essays, argue characters' agency despite supernatural influence.</p>
+                    <h3>Essay Tips for Themes</h3>
+                    <p>Choose 2-3 themes; link with evidence from multiple acts. Use AO3 context (historical/critical). Balance analysis: how theme develops plot/characters. Conclude with thematic relevance today, e.g., ambition in politics.</p>
+                `
+            }],
+            ['quotes', {
+                title: 'Key Quotations',
+                content: `
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Quote</th>
+                                <th>Speaker</th>
+                                <th>Significance</th>
+                                <th>Analysis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>"Fair is foul, and foul is fair"</td>
+                                <td>Witches</td>
+                                <td>Moral inversion, appearance vs reality. Sets paradoxical tone, foreshadowing deception throughout.</td>
+                                <td>Chiasmus structure emphasizes inversion; links to theme of equivocation, reflecting Jacobean fears of deception.</td>
+                            </tr>
+                            <tr>
+                                <td>"Is this a dagger which I see before me"</td>
+                                <td>Macbeth</td>
+                                <td>Hallucination or supernatural? Reveals guilt-ridden psyche before murder, blending internal/external worlds.</td>
+                                <td>Soliloquy form allows psychological depth; dagger as phallic symbol of violent ambition, foreshadowing blood imagery.</td>
+                            </tr>
+                            <tr>
+                                <td>"Out, damned spot!"</td>
+                                <td>Lady Macbeth</td>
+                                <td>Guilt manifested in madness. Blood symbolism shows indelible moral stain, contrasting her earlier bravado.</td>
+                                <td>Irony: she who said "a little water clears us" now obsessed; fragmented language mirrors mental breakdown.</td>
+                            </tr>
+                            <tr>
+                                <td>"Tomorrow, and tomorrow, and tomorrow"</td>
+                                <td>Macbeth</td>
+                                <td>Nihilistic despair upon Lady Macbeth's death. Life as "tale told by an idiot," reflecting existential void post-ambition.</td>
+                                <td>Repetition conveys monotony; metatheatrical, commenting on tragedy's futility, influencing modern absurdist views.</td>
+                            </tr>
+                            <tr>
+                                <td>"Yet do I fear thy nature; It is too full o' the milk of human kindness"</td>
+                                <td>Lady Macbeth</td>
+                                <td>Gender manipulation. Associates compassion with weakness, pushing Macbeth toward violence.</td>
+                                <td>Metaphor of "milk" evokes maternal femininity; inverts gender roles, setting up her "unsex me" invocation.</td>
+                            </tr>
+                            <tr>
+                                <td>"Will all great Neptune's ocean wash this blood clean from my hand?"</td>
+                                <td>Macbeth</td>
+                                <td>Irremovable guilt. Hyperbolic imagery emphasizes crime's permanence, contrasting Lady Macbeth's "A little water clears us."</td>
+                                <td>Mythological reference amplifies scale; blood motif evolves, symbolizing inescapable consequences.</td>
+                            </tr>
+                            <tr>
+                                <td>"Double, double toil and trouble; Fire burn and cauldron bubble"</td>
+                                <td>Witches</td>
+                                <td>Supernatural chaos. Incantation builds atmosphere, symbolizing brewing disorder in Scotland.</td>
+                                <td>Rhyming couplets create rhythmic menace; reinforces otherness, linking to fate/free will ambiguity.</td>
+                            </tr>
+                            <tr>
+                                <td>"By the pricking of my thumbs, Something wicked this way comes"</td>
+                                <td>Witches</td>
+                                <td>Foreshadows Macbeth's corruption. Irony: witches recognize evil in the man they tempted.</td>
+                                <td>Sensory imagery heightens tension; ironic reversal questions who is truly wicked—witches or humans?</td>
+                            </tr>
+                            <tr>
+                                <td>"Life's but a walking shadow, a poor player That struts and frets his hour upon the stage"</td>
+                                <td>Macbeth</td>
+                                <td>Metatheatrical nihilism. Compares life to meaningless performance, highlighting tragedy's futility.</td>
+                                <td>Extended metaphor; "struts and frets" conveys vanity, influencing existentialist interpretations like Camus.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Essay Tips for Quotes</h3>
+                    <p>Embed quotes seamlessly; analyze language techniques (e.g., metaphor). Link to themes/context. Use short quotes for impact; explain how they develop character/plot. Vary quotes across acts for balance.</p>
+                `
+            }],
+            ['essay_tips', {
+                title: 'Essay Writing Tips',
+                content: `
+                    <h3>Structuring Your Essay</h3>
+                    <p>Strong introduction: Hook, context, thesis. Body paragraphs: Topic sentence, evidence, analysis, link to thesis. Conclusion: Summarize, broader implications. Tip: Use TEAL (Topic, Evidence, Analysis, Link) for paragraphs.</p>
+                    <h3>Using Evidence Effectively</h3>
+                    <p>Select relevant quotes; analyze language/form/structure. E.g., for ambition: Discuss "vaulting ambition" metaphor's implications. Integrate context: Link to James I's fears. Avoid retelling plot; focus on "how" and "why."</p>
+                    <h3>Critical Perspectives</h3>
+                    <p>Incorporate views: Feminist (Lady Macbeth as subversive), Marxist (power corruption), Psychoanalytic (guilt hallucinations). Balance with your interpretation. Tip: Use phrases like "As critic X argues..." for sophistication.</p>
+                    <h3>Common Pitfalls to Avoid</h3>
+                    <p>Don't generalize; be specific. Proofread for spelling (e.g., "Macbeth" not "McBeth"). Meet word count with depth, not fluff. Time management: Plan before writing.</p>
+                    <h3>Sample Essay Outline</h3>
+                    <p>Question: Discuss ambition's role. Intro: Define, thesis on destructiveness. Para1: Initial temptation (witches' prophecy). Para2: Consequences (murders, guilt). Para3: Resolution (downfall). Conc: Timeless warning.</p>
+                    <h3>Advanced Tips</h3>
+                    <p>Use sophisticated vocabulary: "equivocation" instead of "lying." Vary sentence structure. Reference adaptations (e.g., Polanski film) for AO4. Practice timed essays for exams.</p>
+                `
+            }],
+            ['quiz', {
+                title: 'Interactive Quiz',
+                content: `
+                    <div id="quiz-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="quiz-progress" style="width: 0%"></div>
+                        </div>
+                        <div id="quiz-stats">
+                            <p>Score: <span id="quiz-score">0/0</span></p>
+                        </div>
+                        <div id="quiz-question"></div>
+                        <button onclick="App.startQuiz()">Start Quiz</button>
+                    </div>
+                `
+            }]
+        ]);
+        // Quiz Questions using Set for efficient deduplication
+        const QuizQuestions = [
+            {
+                question: "Who discovers Duncan's body?",
+                options: ["Macbeth", "Lady Macbeth", "Macduff", "Banquo"],
+                correct: 2,
+                explanation: "Macduff discovers the body in Act 2, Scene 3"
+            },
+            {
+                question: "What is Macbeth's tragic flaw?",
+                options: ["Jealousy", "Vaulting ambition", "Cowardice", "Greed"],
+                correct: 1,
+                explanation: "Macbeth identifies 'vaulting ambition' as his motivation"
+            },
+            {
+                question: "How does Birnam Wood come to Dunsinane?",
+                options: ["Magic", "Earthquake", "Soldiers carry branches", "Metaphor"],
+                correct: 2,
+                explanation: "Malcolm's soldiers use branches as camouflage"
+            },
+            {
+                question: "What does 'Fair is foul' establish?",
+                options: ["Good vs Evil", "Appearance vs Reality", "Fate vs Free Will", "Order vs Chaos"],
+                correct: 1,
+                explanation: "This paradox establishes the theme of deceptive appearances"
+            },
+            {
+                question: "Why can Macduff kill Macbeth?",
+                options: ["Magic sword", "Born by C-section", "False prophecy", "In England"],
+                correct: 1,
+                explanation: "Macduff was 'from his mother's womb untimely ripped'"
+            }
+        ];
+        // Main Application using functional patterns
+        const App = {
+            init: function() {
+                Performance.mark('app-init-start');
+                this.setupNavigation();
+                this.setupIntersectionObserver();
+                this.loadInitialContent();
+                this.setupEventListeners();
+                Performance.mark('app-init-end');
+                Performance.measure('app-initialization', 'app-init-start', 'app-init-end');
+                // Log performance
+                console.log('Performance Metrics:', Object.fromEntries(State.get('performanceMetrics')));
+            },
+            setupNavigation: function() {
+                const navList = document.getElementById('nav-list');
+                const navItems = Array.from(ContentData.keys()).map(key => {
+                    const data = ContentData.get(key);
+                    return `<li><a href="#${key}" data-section="${key}">${data.title}</a></li>`;
+                });
+                navList.innerHTML = navItems.join('');
+            },
+            setupIntersectionObserver: function() {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1
+                };
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            State.get('visitedSections').add(entry.target.id);
+                        }
+                    });
+                }, observerOptions);
+                // Observe sections as they're created
+                this.observer = observer;
+            },
+            loadInitialContent: function() {
+                const mainContent = document.getElementById('main-content');
+                const sections = Array.from(ContentData.entries()).map(([key, data]) => `
+                    <section id="${key}" class="content-section">
+                        <h2>${data.title}</h2>
+                        ${data.content}
+                    </section>
+                `);
+                mainContent.innerHTML = sections.join('');
+                // Observe all sections
+                document.querySelectorAll('.content-section').forEach(section => {
+                    this.observer.observe(section);
+                });
+            },
+            setupEventListeners: function() {
+                // Navigation clicks
+                document.addEventListener('click', (e) => {
+                    if (e.target.matches('nav a')) {
+                        e.preventDefault();
+                        const section = e.target.dataset.section;
+                        this.navigateToSection(section);
+                    }
+                });
+                // Optimized scroll handling
+                const handleScroll = Utils.throttle(() => {
+                    this.updateActiveNavItem();
+                }, 100);
+                window.addEventListener('scroll', handleScroll, { passive: true });
+            },
+            navigateToSection: function(sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    State.set('currentSection', sectionId);
+                }
+            },
+            updateActiveNavItem: Utils.debounce(function() {
+                const sections = document.querySelectorAll('.content-section');
+                const scrollPos = window.scrollY + 100;
+                sections.forEach(section => {
+                    const top = section.offsetTop;
+                    const height = section.offsetHeight;
+                    if (scrollPos >= top && scrollPos < top + height) {
+                        State.set('currentSection', section.id);
+                    }
+                });
+            }, 50),
+            // Quiz functionality with functional approach
+            startQuiz: function() {
+                const quizState = {
+                    questions: [...QuizQuestions],
+                    currentIndex: 0,
+                    score: 0
+                };
+                // Shuffle questions using Fisher-Yates
+                for (let i = quizState.questions.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [quizState.questions[i], quizState.questions[j]] = 
+                    [quizState.questions[j], quizState.questions[i]];
+                }
+                State.set('quizQuestions', new Set(quizState.questions));
+                this.showQuestion(quizState);
+            },
+            showQuestion: function(quizState) {
+                if (quizState.currentIndex >= quizState.questions.length) {
+                    this.endQuiz(quizState);
+                    return;
+                }
+                const question = quizState.questions[quizState.currentIndex];
+                const container = document.getElementById('quiz-question');
+                const optionsHtml = question.options.map((opt, idx) => 
+                    `<button class="quiz-option" onclick="App.checkAnswer(${idx}, ${question.correct}, ${quizState.currentIndex})">${opt}</button>`
+                ).join('');
+                container.innerHTML = `
+                    <h3>Question ${quizState.currentIndex + 1}/${quizState.questions.length}</h3>
+                    <p>${question.question}</p>
+                    ${optionsHtml}
+                `;
+                // Update progress
+                const progress = ((quizState.currentIndex / quizState.questions.length) * 100);
+                document.getElementById('quiz-progress').style.width = `${progress}%`;
+            },
+            checkAnswer: function(selected, correct, index) {
+                const options = document.querySelectorAll('.quiz-option');
+                options.forEach(opt => opt.disabled = true);
+                if (selected === correct) {
+                    options[selected].classList.add('correct');
+                    State.set('quizScore', State.get('quizScore') + 1);
+                } else {
+                    options[selected].classList.add('incorrect');
+                    options[correct].classList.add('correct');
+                }
+                setTimeout(() => {
+                    const questions = Array.from(State.get('quizQuestions'));
+                    this.showQuestion({
+                        questions: questions,
+                        currentIndex: index + 1,
+                        score: State.get('quizScore')
+                    });
+                }, 1500);
+            },
+            endQuiz: function(quizState) {
+                const container = document.getElementById('quiz-question');
+                const score = State.get('quizScore');
+                const total = quizState.questions.length;
+                const percentage = Math.round((score / total) * 100);
+                container.innerHTML = `
+                    <div class="score-display">
+                        <h3>Quiz Complete!</h3>
+                        <p>Score: ${score}/${total} (${percentage}%)</p>
+                        <button onclick="App.startQuiz()">Try Again</button>
+                    </div>
+                `;
+                State.set('quizScore', 0);
+            }
+        };
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => App.init());
+        } else {
+            App.init();
         }
-        function useSampleEssay() {
-            document.getElementById('essayInput').value = `Macbeth's ambition is a very destructive force. Shakespeare really shows this when Macbeth says "To be thus is nothing, but to be safely thus." This quote is good because it reveals his paranoia. Lady Macbeth is also a bad person. She is maybe more ambitious than him. In the end, everything is just tragic.`;
-            analyzeEssay();
-        }
+        // Expose necessary functions to global scope for onclick handlers
+        window.App = App;
     </script>
 </body>
 </html>
